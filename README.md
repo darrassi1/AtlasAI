@@ -1,5 +1,5 @@
 <p align="center">
-  <img src=".assets/Atlas-avatar.png" alt="Atlas Logo" width="250">
+  <img src=".assets/atlas-avatar.png" alt="Atlas Logo" width="250">
 </p>
 
 <h1 align="center">🚀 Atlas - Agentic AI Software Engineer 👩‍💻</h1>
