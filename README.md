@@ -6,6 +6,11 @@
 
 ![Atlas screenshot](.assets/1.png)
 ![Atlas screenshot](.assets/2.png)
+![Atlas screenshot](.assets/3.png)
+![Atlas screenshot](.assets/4.png)
+![Atlas screenshot](.assets/5.png)
+![Atlas screenshot](.assets/6.png)
+
 > [!IMPORTANT]  
 > This project is currently in a very early development/experimental stage. There are a lot of unimplemented/broken features at the moment. Contributions are welcome to help out with the progress!
 
