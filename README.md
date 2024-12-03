@@ -4,8 +4,8 @@
 
 <h1 align="center">🚀 Atlas - Agentic AI Software Engineer 👩‍💻</h1>
 
-![Atlas screenshot](.assets/Atlas-screenshot.png)
-
+![Atlas screenshot](.assets/1.png)
+![Atlas screenshot](.assets/2.png)
 > [!IMPORTANT]  
 > This project is currently in a very early development/experimental stage. There are a lot of unimplemented/broken features at the moment. Contributions are welcome to help out with the progress!
 
