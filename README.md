@@ -34,8 +34,7 @@ Atlas aims to revolutionize the way we build software by providing an AI pair pr
 
 ## Demos
 
-https://github.com/stitionai/Atlas/assets/26198477/cfed6945-d53b-4189-9fbe-669690204206
-
+https://github.com/darrassi1/AtlasAI
 ## Key Features
 
 - 🤖 Supports **Claude 3**, **GPT-4**, **Gemini**, **Mistral** , **Groq** and **Local LLMs** via [Ollama](https://ollama.com). For optimal performance: Use the **Claude 3** family of models.
@@ -75,11 +74,11 @@ To install Atlas, follow these steps:
 
 1. Clone the Atlas repository:
    ```bash
-   git clone https://github.com/stitionai/Atlas.git
+   git clone https://github.com/stitionai/AtlasAI.git
    ```
 2. Navigate to the project directory:
    ```bash
-   cd Atlas
+   cd AtlasAI
    ```
 3. Create a virtual environment and install the required dependencies (you can use any virtual environment manager):
    ```bash
