@@ -1,5 +1,5 @@
 [STORAGE]
-SQLITE_DB = "data/db/devika.db"
+SQLITE_DB = "data/db/atlas.db"
 SCREENSHOTS_DIR = "data/screenshots"
 PDFS_DIR = "data/pdfs"
 PROJECTS_DIR = "data/projects"
