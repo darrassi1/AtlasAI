@@ -1,6 +1,6 @@
-# Devika Architecture
+# Atlas Architecture
 
-Devika is an advanced AI software engineer that can understand high-level human instructions, break them down into steps, research relevant information, and write code to achieve a given objective. This document provides a detailed technical overview of Devika's system architecture and how the various components work together.
+Atlas is an advanced AI software engineer that can understand high-level human instructions, break them down into steps, research relevant information, and write code to achieve a given objective. This document provides a detailed technical overview of Atlas's system architecture and how the various components work together.
 
 ## Table of Contents
 
@@ -26,7 +26,7 @@ Devika is an advanced AI software engineer that can understand high-level human 
 
 ## Overview
 
-At a high level, Devika consists of the following key components:
+At a high level, Atlas consists of the following key components:
 
 - **Agent Core**: Orchestrates the overall AI planning, reasoning and execution process. Communicates with various sub-agents.
 - **Agents**: Specialized sub-agents that handle specific tasks like planning, research, coding, patching, reporting etc.  
@@ -41,7 +41,7 @@ Let's dive into each of these components in more detail.
 
 ## Agent Core
 
-The `Agent` class serves as the central engine that drives Devika's AI planning and execution loop. Here's how it works:
+The `Agent` class serves as the central engine that drives Atlas's AI planning and execution loop. Here's how it works:
 
 1. When a user provides a high-level prompt, the `execute` method is invoked on the Agent. 
 2. The prompt is first passed to the Planner agent to generate a step-by-step plan.
@@ -64,7 +64,7 @@ Throughout this process, the Agent Core is responsible for:
 
 ## Agents
 
-Devika's cognitive abilities are powered by a collection of specialized sub-agents. Each agent is implemented as a separate Python class. Agents communicate with the underlying LLMs through prompt templates defined in Jinja2 format. Key agents include:
+Atlas's cognitive abilities are powered by a collection of specialized sub-agents. Each agent is implemented as a separate Python class. Agents communicate with the underlying LLMs through prompt templates defined in Jinja2 format. Key agents include:
 
 ### Planner
 - Generates a high-level step-by-step plan based on the user's prompt
@@ -127,7 +127,7 @@ Agents aim to be stateless and idempotent where possible. State and history is m
 
 ## Language Models
 
-Devika's natural language processing capabilities are driven by state-of-the-art LLMs. The `LLM` class provides a unified interface to interact with different language models:
+Atlas's natural language processing capabilities are driven by state-of-the-art LLMs. The `LLM` class provides a unified interface to interact with different language models:
 
 - **Claude** (Anthropic): Claude models like claude-v1.3, claude-instant-v1.0 etc.
 - **GPT-4/GPT-3** (OpenAI): Models like gpt-4, gpt-3.5-turbo etc.
@@ -142,7 +142,7 @@ Choosing the right model for a given use case depends on factors like desired qu
 
 ## Browser Interaction
 
-Devika can interact with webpages in an automated fashion to gather information and perform actions. This is powered by the `Browser` and `Crawler` classes.
+Atlas can interact with webpages in an automated fashion to gather information and perform actions. This is powered by the `Browser` and `Crawler` classes.
 
 The `Browser` class uses Playwright to provide high-level web automation primitives:
 - Spawning a browser instance (Chromium)
@@ -210,7 +210,7 @@ Having a persistent log of agent states is useful for:
 
 ## Services
 
-Devika integrates with external services to augment its capabilities:
+Atlas integrates with external services to augment its capabilities:
 
 - **GitHub**: Performing git operations like clone/pull, listing repos/commits/files etc.
 - **Netlify**: Deploying web apps and sites seamlessly
@@ -218,7 +218,7 @@ Devika integrates with external services to augment its capabilities:
 The `GitHub` and `Netlify` classes provide lightweight wrappers around the respective service APIs. 
 They handle authentication, making HTTP requests, and parsing responses.
 
-This allows Devika to perform actions like:
+This allows Atlas to perform actions like:
 - Cloning a repo given a GitHub URL
 - Listing a user's GitHub repos 
 - Creating a new Netlify site
@@ -229,7 +229,7 @@ Integrations are done in a modular way so that new services can be added easily.
 
 ## Utilities  
 
-Devika makes use of several utility modules to support its functioning:
+Atlas makes use of several utility modules to support its functioning:
 
 - `Config`: Loads and provides access to configuration settings (API keys, folder paths etc.) 
 - `Logger`: Sets up logging to console and file, with support for log levels and colors
@@ -241,11 +241,11 @@ The utility modules aim to provide reusable functionality that is used across di
 
 ## Conclusion
 
-Devika is a complex system that combines multiple AI and automation techniques to deliver an intelligent programming assistant. Key design principles include:
+Atlas is a complex system that combines multiple AI and automation techniques to deliver an intelligent programming assistant. Key design principles include:
 
 - Modularity: Breaking down functionality into specialized agents and services
 - Flexibility: Supporting different LLMs, services and domains in a pluggable fashion  
 - Persistence: Storing project and agent state in a DB to enable pause/resume and auditing
 - Transparency: Surfacing agent thought process and interactions to user in real-time
 
-By understanding how the different components work together, we can extend, optimize and scale Devika to take on increasingly sophisticated software engineering tasks. The agent-based architecture provides a strong foundation to build more advanced AI capabilities in the future.
+By understanding how the different components work together, we can extend, optimize and scale Atlas to take on increasingly sophisticated software engineering tasks. The agent-based architecture provides a strong foundation to build more advanced AI capabilities in the future.

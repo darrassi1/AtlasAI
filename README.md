@@ -34,7 +34,7 @@ Atlas aims to revolutionize the way we build software by providing an AI pair pr
 
 ## Demos
 
-https://github.com/darrassi1/AtlasAI
+<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7251895382618554368?compact=1" height="399" width="710" frameborder="0" allowfullscreen="" title="Post intégré"></iframe>
 ## Key Features
 
 - 🤖 Supports **Claude 3**, **GPT-4**, **Gemini**, **Mistral** , **Groq** and **Local LLMs** via [Ollama](https://ollama.com). For optimal performance: Use the **Claude 3** family of models.
