@@ -1,0 +1,33 @@
+Please provide a list of code suggestions for the given {{ language }} and {{ code }}
+format:
+```
+[
+    {"text": "<code>", "documentation": "<documentation>", "detail": "<detail>"},
+    {"text": "<code>", "documentation": "<documentation>", "detail": "<detail>"},
+    {"text": "<code>", "documentation": "<documentation>", "detail": "<detail>"},
+    {"text": "<code>", "documentation": "<documentation>", "detail": "<detail>"},
+    {"text": "<code>", "documentation": "<documentation>", "detail": "<detail>"},
+    {"text": "<code>", "documentation": "<documentation>", "detail": "<detail>"},
+    {"text": "<code>", "documentation": "<documentation>", "detail": "<detail>"},
+    {"text": "<code>", "documentation": "<documentation>", "detail": "<detail>"}
+]
+
+```
+exemple format:
+```
+[
+    {"text": "console.log()", "documentation": "Logs output to the console", "detail": "Used for debugging purposes"},
+    {"text": "if statement", "documentation": "Conditional statement", "detail": "Executes a block of code if a specified condition is true"},
+    {"text": "if statement1", "documentation": "Conditional statement", "detail": "Executes a block of code if a specified condition is true"},
+    {"text": "if statement2", "documentation": "Conditional statement", "detail": "Executes a block of code if a specified condition is true"},
+    {"text": "for loop", "documentation": "Looping statement", "detail": "Executes a block of code a number of times"},
+    {"text": "function declaration", "documentation": "Defines a function", "detail": "A block of code designed to perform a particular task"},
+    {"text": "try-catch block", "documentation": "Exception handling statements", "detail": "Tries to execute a block of code, and catches any errors that occur"}
+]
+
+```
+
+Rules:
+- Any response other than this format will be rejected. You should not refuse to complete the task, you should try your absolute best and if there's any implementation detail that's impossible to complete, you should write a comment in the code explaining why it's impossible to complete. The refusal is only a last resort, it should never happen.
+- Your response should start with "```" and end with "```" just like the example format provided. Never provide any explanation or context inside the response, only the key "text" and value code in the format provided. Do not leave any "Note".
+

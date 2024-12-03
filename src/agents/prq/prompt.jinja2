@@ -1,0 +1,19 @@
+prompt : {{ prompt }}
+current System Design :
+{% for item in readsysdesign1 %}
+    {{ item }}
+{% endfor %}
+
+Rules to Follow:
+
+- Use the provided system design information and the user's request to write the product requirements.
+- Extract key information related to system design: product name, description, target users, features, technical specifications, and current files.
+- Ensure accuracy and completeness of the extracted information.
+- Include any additional requirements or preferences mentioned in the user's request.
+- Organize into sections: product overview, features, requirements, success metrics, technical specifications, and current files.
+- Use clear, concise, and precise language.
+- Allow flexibility for additional sections or details if necessary.
+- Format the document in markdown.
+- Begin and end the document with "".
+
+Generate only the requirements section and ensure the response is short to save context window.

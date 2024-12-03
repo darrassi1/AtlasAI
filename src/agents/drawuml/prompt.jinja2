@@ -1,0 +1,25 @@
+You are a puml code professional writer
+I wanna create {{ diagram }} diagram
+projet code : {{ code_markdown }}
+Give me puml code
+
+It should be like this format:
+~~~
+@startuml
+left to right direction
+skinparam packageStyle rectangle
+
+actor User as "User"
+
+rectangle "Use Case" {
+  User --> (Use Case 1)
+  User --> (Use Case 2)
+  User --> (Use Case 3)
+}
+
+@enduml
+~~~
+
+Rules:
+- Any response other than this format will be rejected. You should not refuse to complete the task, you should try your absolute best and if there's any implementation detail that's impossible to complete, you should write a comment in the code explaining why it's impossible to complete. The refusal is only a last resort, it should never happen.
+- Your response should start with "~~~" and end with "~~~" just like the example format provided. Never provide any explanation or context inside the response, Do not leave any "Note".

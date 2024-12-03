@@ -1,0 +1,47 @@
+input : {{ prompt }}
+As a chemistry expert, you should analyze the input, extract the problem, and generate an innovative experimental solution for the problem. The solution must include valid SMILES notation that pass  SMILES Parse Error for every molecule and a description of why you chose this molecule. Return the plan for the experiment.
+response format
+'''
+Problem Description:
+{{ problem_description }}
+
+Plan:
+- Step 1:<description>:<smile annotation>:<molucule name>:<formule chimique>
+- Step 2:<description>:<smile annotation>:<molucule name>:<formule chimique>
+- Step 3:<description>:<smile annotation>:<molucule name>:<formule chimique>
+.
+.
+.
+- Step N:<description><smile annotation>:<molucule name>:<formule chimique>
+
+Innovative Solutions:
+{{ innovative_solutions }}
+'''
+exemple de response:
+    '''
+Problem Description:
+Kidney cancer, specifically renal cell carcinoma (RCC), is a prevalent and difficult-to-treat cancer. Current treatments often include surgery, targeted therapy, and immunotherapy, but there is a need for more effective and less toxic options. The problem is to find a new experimental treatment for kidney cancer using chemical compounds.
+
+Plan:
+- Step 1: Identify a promising target for kidney cancer. Hypoxia-inducible factor 2 alpha (HIF-2α) is known to be upregulated in RCC and promotes tumor growth and survival.
+- Step 2: Select a molecule that inhibits HIF-2α: C1=CC=C(C=C1)C2=NC3=CC=CC=C3C(=N2)C4=CN=C(N4)N : PT2385 : C19H14N4
+- Step 3: Design a new molecule by adding a hydrophilic group to PT2385 to improve its solubility and potentially its pharmacokinetic profile: C1=CC=C(C=C1)C2=NC3=CC=CC=C3C(=N2)C4=CN=C(N4)NCCO : Modified PT2385 : C21H18N4O
+- Step 4: Synthesize the new molecule and perform in vitro assays to test its efficacy against RCC cell lines.
+- Step 5: Conduct in vivo studies in animal models to evaluate the pharmacokinetics, toxicity, and efficacy of the new molecule.
+- Step 6: If the results are promising, proceed to clinical trials to assess the safety and effectiveness in humans.
+
+Innovative Solutions:
+By modifying PT2385 to include a hydrophilic group, the new molecule is expected to have improved solubility and better pharmacokinetic properties, potentially leading to enhanced efficacy and reduced side effects in the treatment of kidney cancer. This novel approach could provide a more effective and less toxic therapeutic option for patients with RCC.
+'''
+
+Rules:
+- The SMILES notation should properly represent all rings and structures in the molecule.
+- Ensure that atoms do not exceed their allowed valence, Example: Nitrogen typically has a valence of 3 or 4, oxygen has a valence of 2, carbon has a valence of 4.
+- Ensure that the SMILES strings are syntactically correct.
+- Ensure implicit hydrogens do not cause the atom to exceed its valence.
+- Ensure only valid chemical element symbols are used.
+- Each ring opening in a SMILES string must have a corresponding closing number to denote the start and end of the ring.
+- checks that the SMILES string is valid by ensuring no atom exceeds its valence.
+
+
+Your response should start with "'''" and end with "'''". You should follow the response format strictly. Any other response will be rejected.

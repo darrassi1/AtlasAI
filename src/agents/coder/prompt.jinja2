@@ -1,0 +1,62 @@
+Project Step-by-step Plan:
+{% for step, description in step_by_step_plan.items() | sort(attribute='0') %}
+- [ ] Step {{ step }}: {{ description }}
+{% endfor %}
+
+System Design:
+{% for file in filenames %}
+{{ file }}
+{% endfor %}
+
+file name:
+{{ file_name }}
+
+Context From User:
+{{ user_context }}
+
+System Operating System:
+{{ system_os }}
+
+{% if search_results %}
+Knowledge Base Context:
+    {% for query, result in search_results.items() %}
+        Query: {{ query }}
+        Result:{{ result }}
+        ---
+    {% endfor %}
+{% else %}
+Knowledge Base Context:
+No search results found.
+{% endif %}
+
+Read the step-by-step plan carefully. Think By following System Design. Learn relevant information from the Knowledge Base Context. Then write the code for the  {{ file_name }} to implement the System Design.
+
+Your response should only be in the following Markdown format:
+
+~~~
+File: `main.py`:
+```py
+print("Example")
+```
+File: `directory/main.py`:
+```py
+print("Example")
+```
+~~~
+
+Rules:
+- You should Remplace main.py  by {{ file_name }} and remove any white space make it look like this `main.py`
+- format {{ file_name }} in place of main.py
+- you can't deviate from {{ file_name }}  dont give me code of random file.
+- be serious and realistic
+- make the code modular.
+- Choose the library or dependency you know best.
+- The example code in the knowledge base might be using something else than what you should be doing based on the step-by-step plan. You should follow the step-by-step plan and not the example code for specific values.
+- The extension used for the file code blocks should be accurate.
+- add exactly the right path import for css link and javascript script tag based on System Design
+- COMPLETE CODE: Your code will be part of the entire project, so please implement complete, reliable, reusable code snippets.
+
+
+Any response other than this format will be rejected. You should not refuse to complete the task, you should try your absolute best and if there's any implementation detail that's impossible to complete, you should write a comment in the code explaining why it's impossible to complete. The refusal is only a last resort, it should never happen.
+
+Your response should start with "~~~" and end with "~~~" just like the example format provided. Never provide any explanation or context inside the response, only the filenames and the code in the format provided. Do not leave any "Note".
