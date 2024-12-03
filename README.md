@@ -164,7 +164,7 @@ We welcome contributions to enhance Atlas's capabilities and improve its perform
 
 If you have any questions, feedback, or suggestions, please feel free to reach out to us. you can raise an issue in the [issue tracker](https://github.com/darrassi1/Atlas/issues) or join the [discussions](https://github.com/darrassi1/Atlas/discussions) for general discussions.
 
-We also have a Discord server for the Atlas community, where you can connect with other users, share your experiences, ask questions, and collaborate on the project. To join the Atlas community Discord server, [click here](https://discord.gg/CYRp43878y).
+We also have a Discord server for the Atlas community, where you can connect with other users, share your experiences, ask questions, and collaborate on the project. To join the Atlas community Discord server, [click here](https://discord.gg/9crK9SF3).
 
 ## License
 
