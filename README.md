@@ -74,7 +74,7 @@ To install Atlas, follow these steps:
 
 1. Clone the Atlas repository:
    ```bash
-   git clone https://github.com/stitionai/AtlasAI.git
+   git clone https://github.com/darrassi1/AtlasAI.git
    ```
 2. Navigate to the project directory:
    ```bash
@@ -157,7 +157,7 @@ We welcome contributions to enhance Atlas's capabilities and improve its perform
 
 ## Help and Support
 
-If you have any questions, feedback, or suggestions, please feel free to reach out to us. you can raise an issue in the [issue tracker](https://github.com/stitionai/Atlas/issues) or join the [discussions](https://github.com/stitionai/Atlas/discussions) for general discussions.
+If you have any questions, feedback, or suggestions, please feel free to reach out to us. you can raise an issue in the [issue tracker](https://github.com/darrassi1/Atlas/issues) or join the [discussions](https://github.com/darrassi1/Atlas/discussions) for general discussions.
 
 We also have a Discord server for the Atlas community, where you can connect with other users, share your experiences, ask questions, and collaborate on the project. To join the Atlas community Discord server, [click here](https://discord.gg/CYRp43878y).
 
@@ -168,11 +168,11 @@ Atlas is released under the [MIT License](https://opensource.org/licenses/MIT). 
 ## Star History
 
 <div align="center">
-<a href="https://star-history.com/#stitionai/Atlas&Date">
+<a href="https://star-history.com/#darrassi1/AtlasAI&Date">
  <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=stitionai/Atlas&type=Date&theme=dark" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=stitionai/Atlas&type=Date" />
-   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=stitionai/Atlas&type=Date" />
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=darrassi1/AtlasAI&type=Date&theme=dark" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=darrassi1/AtlasAI&type=Date" />
+   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=darrassi1/AtlasAI&type=Date" />
  </picture>
 </a>
 </div>
