@@ -113,9 +113,9 @@ To install Atlas, follow these steps:
    ```bash
    cd ui/
    bun install
-   bun run start
+   bun run dev
    ```
-8. Access the Atlas web interface by opening a browser and navigating to `http://127.0.0.1:3001`
+8. Access the Atlas web interface by opening a browser and navigating to `http://127.0.0.1:3000`
 
 ### how to use
 
